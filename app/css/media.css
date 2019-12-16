@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
-  
+  .search-header__input {
+    min-width: auto;
 }
 
 @media screen and (max-width: 1024px) {
