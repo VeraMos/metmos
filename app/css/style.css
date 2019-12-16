@@ -452,11 +452,11 @@ button {
 }
  
 .banner-item_slide1 {
-  background-image:url(img/index/slider1.png);
+  background-image:url(../img/index/slider1.png);
 }
 
 .banner-item_slide2 {
-  background-image:url(img/index/slider2.png);
+  background-image:url(../img/index/slider2.png);
 }
 
 .banner-text {
