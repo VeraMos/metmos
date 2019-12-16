@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
-  
+  .search-header__input {
+    min-width: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -267,7 +268,7 @@
     min-width: auto;
   }
   .banner-item_slide1 {
-    background-image: url(/img/index/slider1-mobile.png)!important;
+    background-image: url(../img/index/slider1-mobile.png)!important;
   }
   .banner-ttl {
     font-size: 32px;
