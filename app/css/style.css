@@ -708,7 +708,7 @@ button {
 }
 
 .container {
-    max-width: 1200px!important;
+    max-width: 1300px!important;
 }
 
 .footer-menu_list a{
@@ -1040,7 +1040,7 @@ button {
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 9px;
   left: 0;
   width: 13px;
   height: 8px;
@@ -1102,12 +1102,12 @@ button {
 
 .categor__item p {
   padding: 30px 10px;
-  width: 154px;
+  width: 178px;
   font-size: 13px;
   line-height: 20px;
 }
 
-.categor__item::first-child {
+.categor__item:first-child {
   margin-left: 0;
 }
 
@@ -1116,12 +1116,15 @@ button {
   border-radius: 10px;
   padding: 10px 40px;
   display: flex;
+  margin-bottom: 60px;
 }
 
 .categor-banner img{
   width: 100%;
   max-width: 500px;
   max-height: 117px;
+  margin: 20px 0;
+
 }
 
 .categor-banner p{
@@ -1155,6 +1158,13 @@ button {
   margin: 30px 0 50px;
 }
 
+.categor__tabs__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .categor-text__list {
   list-style: none;
   padding: 0
@@ -1179,7 +1189,8 @@ button {
 
 .categor-add__servises__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  justify-content: center;
 }
 
 .categor-add__servises__block {
@@ -1212,23 +1223,280 @@ button {
 .categor-advant-list {
   display: flex;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .categor-abvant-item {
   display: flex;
   align-items: center;
+  position: relative;
+  margin: 10px 0;
+  width: 20%;
 }
 
 .categor-abvant-item img {
   width: 100%;
-  max-width: 104px;
-  max-height: 96px;
+  max-width: 85px;
+  max-height: 95px;
 }
 
 .categor-abvant-item__text {
-  margin-left: 15px; 
-  max-width: 120px;
+  max-width: 160px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
 }
+
+.categor-abvant-item::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 1px;
+  height: 70px;
+
+}
+
+.categor-partner {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.categor-partner__item {
+  width: 20%;
+  height: 140px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #F2F2F2;
+}
+
+.categor-partner__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categor-form {
+  padding: 80px 0;
+}
+
+.categor-form__wrap {
+  display: block;
+  margin: 0 auto;
+  max-width: 1050px;
+  background-color: #fff;
+  box-shadow: 0px 43px 88px rgba(75, 69, 51, 0.1);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+
+.categor-form__wrap::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -140px;
+  width: 237px;
+  height: 250px;
+  background-image: url(../img/index/krivue.png);
+  background-size: cover;
+}
+
+.categor-form__wrap::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -140px;
+  width: 237px;
+  height: 250px;
+  background-image: url(../img/index/pk.png);
+  background-size: cover;
+}
+
+.categor-form__ttl {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.categor-form__text {
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 520px;
+  display: block;
+  margin: 10px auto 15px;
+}
+
+.categor-form__input {
+  background: #FAFAFA;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin: 3px;
+}
+
+.categor-form__input:hover,
+ .categor-form__textarea:hover {
+  border: 1px solid #FBB91B;
+}
+
+.categor-form__textarea {
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 95%;
+  padding: 8px 16px;
+  min-height: 150px;
+}
+
+.categor-form__subtext {
+  font-size: 10px;
+  line-height: 12px;
+  color: #808080;
+  margin: 20px 0 10px;
+}
+
+.leftmenu__list {
+  border-radius: 10px;
+  background-color: #fff;
+  list-style: none;
+  padding: 20px;
+  margin: 65px 0 50px;
+}
+
+.leftmenu__item {
+  margin: 20px 0;
+  position: relative;
+  }
+
+.leftmenu__item a {
+  color: #333333;
+  position: relative;
+}
+
+.leftmenu__item:hover a{
+  color: #FBB91B;
+}
+
+.leftmenu__item:hover a::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: #FFB504;
+}
+
+.leftmenu__item::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 13px;
+    height: 8px;
+    background-image: url(../img/index/ar-down.svg);
+    transform: rotate(-90deg) scale(0.7);
+    background-repeat: no-repeat;
+}
+
+.left-menu-ttl {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.leftmenu__list-parametr {
+  border-radius: 10px;
+  background-color: #fff;
+  list-style: none;
+  padding: 0px;
+  margin: 5px 0 50px;
+}
+
+.leftmenu__list-parametr li {
+  position: relative;
+  padding: 20px 20px;
+}
+
+.leftmenu__list-parametr li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 13px;
+  height: 8px;
+  background-image: url(../img/index/ar-down.svg);
+  transform: scale(0.7);
+  background-repeat: no-repeat;
+}
+
+.leftmenu__list-parametr li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 1px;
+}
+
+.categor__tabs__item {
+  background-color: #f2f2f2;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.categor__tabs__item .active {
+  background-color: #fff;
+}
+
+.categor__tabs__item button {
+  padding: 16px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.categor__tabs__tab {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.categor__table {
+  border: 1px solid #F2F2F2;
+}
+
+.categor__table th {
+  padding: 15px;
+  max-width: 280px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #F2F2F2;
+
+}
+
+.categor__table td {
+  padding: 15px;
+  max-width: 280px;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 1px solid #F2F2F2;
+  text-align: center;
+}
+
+.categor__table td:first-child {
+  text-align: left;
+}
+
+.categor__table:hover a{
+  color: #FBB91B;
+}
+
 
 
 
