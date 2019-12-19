@@ -27,6 +27,12 @@ $('.catalog-card__title-wrap').click(function() {
   $(this).children('.catalog-menu-arrow').toggleClass('active');
 });
 
+$('.leftmenu__filter__ttl').click(function() {
+  $(this).toggleClass('active');
+  $(this).next('.categor__filter__list').toggleClass('active');
+  $(this).children('.leftmenu-arrow').toggleClass('active');
+});
+
 $('.header__menu-toggle').on('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('header__menu-toggle--active');
@@ -69,3 +75,18 @@ $("#menu").mmenu({
       navbar: { title: "Меню" }
     });
 });
+
+(function($) {
+$(function() {
+
+  $('input, select').styler({
+  fileBrowse: 'Выбрать',
+  singleSelectzIndex: '999',
+  onSelectOpened: function() {
+    // к открытому селекту добавляется красная обводка
+    $(this).css('box-shadow: 0px 15px 31px rgba(0, 0, 0, 0.1);');
+  }
+});
+
+});
+})(jQuery);
