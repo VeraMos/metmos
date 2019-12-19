@@ -1482,6 +1482,7 @@ button {
 
 .categor__tabs__item .active {
   background-color: #fff;
+  height: 100%;
 }
 
 .categor__tabs__item button {
@@ -1773,11 +1774,13 @@ button {
 .js-choose-filter-select{
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   position: relative;
   font-size: 16px;
   line-height: 20px;
   background: #fff;
+}
+.jq-selectbox__select-text {
+  padding: 10px 20px 20px;
 }
 
 .jq-selectbox__dropdown li {
@@ -1797,7 +1800,7 @@ button {
 
 .jq-selectbox__select {
     height: 32px;
-    padding: 8px 45px 0 10px!important;
+    padding:10px 0!important;
     border: none!important;
     border-bottom-color: transparent!important;
     border-radius: 4px;
@@ -1806,13 +1809,16 @@ button {
     font: inherit!important;
     color: #333;
     text-shadow: none!important;
-    max-width: 276px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .jq-selectbox__dropdown {
   font: inherit!important;
   border: none!important;
   box-shadow: none!important;
+  width: 100% !important;
+  margin-top: 25px;
 }
 
 .leftmenu__list_level2 {
@@ -1848,8 +1854,77 @@ button {
   padding-right: 30px;
 }
 
-.
+.popup-category__ttl {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+   }
 
+   .popup-category__text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+   }
+
+   .popup-form__input {
+    border-radius: 45px;
+    background: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin: 3px;
+    width: 100%;
+   }
+
+   .popup-form__textarea {
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 16px;
+    min-height: 70px;
+   }
+
+
+   .popup-form__input:hover,
+ .popup-form__textarea:hover {
+  border: 1px solid #FBB91B;
+}
+
+.popup-form__subtext {
+  font-size: 10px;
+  line-height: 12px;
+  color: #808080;
+  margin: 20px 0 10px;
+}
+
+.categor-banner__link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.categor-banner__link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.categor-banner_img2 {
+  display: none;
+}
+
+.categor__tabs-arrow {
+  display: none;
+}
+
+.categor__tabs__tab {
+  display: none;
+}
+
+.categor__tabs__tab.active {
+  display: block;
+}
 
 
 

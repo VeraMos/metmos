@@ -8,10 +8,10 @@
 	<title></title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link href="libs/dist/jquery.formstyler.css" rel="stylesheet" />
 	<link href="libs/dist/jquery.formstyler.theme.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 		<header class="header">
@@ -415,8 +415,8 @@
 	            	</div>-->
                 <div class="cat__filter">            
                 <select class="cat__filter__select" name="steelGrade">
-                    <option value="" class="js-choose-filter-select">
-                       Марка стали
+                    <option selected value="" class="js-choose-filter-select">
+                       <span>Марка стали</span>
                     </option>
                     <option value="АД1Н">АД1Н</option>
                     <option value="ВД1Н">ВД1Н</option>
@@ -502,22 +502,35 @@
 						</div>								
 					</div>
 					<div class="categor-banner">
-						<p>Отправьте нам список нужных материалов для расчета</p>
-						<img src="img/index/img-banner.png" alt="">
+						<p><a href="#popup-category" class="categor-banner__link" data-fancybox>Отправьте нам список нужных материалов для расчета</a></p>
+						<img class="categor-banner_img1" src="img/index/img-banner.png" alt="">
+						<img class="categor-banner_img2" src="img/index/banner2.png" alt="" style="max-width: 135px;">
 					</div>
 
 					<section class="categor__tabs">
 					<nav class="tabs_nav">
 				      <ul class="categor__tabs__list">
-				        <li class="categor__tabs__item">
-				          <button class="active" type="button" data-tab="1">Полоса г/к</button>
+				        <li class="categor__tabs__item active">
+				          <button class="categor__tabs__button active" type="button" data-tab="1"><span>Полоса г/к</span>
+				          <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="categor__tabs-arrow">
+							<path d="M12 1L7.23716 6.19583C6.84082 6.6282 6.15918 6.6282 5.76285 6.19583L1 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+							</button>
 				        </li>
 				        <li class="categor__tabs__item">
-				          <button type="button" data-tab="2">Полоса г/к оцинкованная</button>
+				          <button class="categor__tabs__button" type="button" data-tab="2"><span>Полоса г/к оцинкованная</span>
+				          <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="categor__tabs-arrow">
+							<path d="M12 1L7.23716 6.19583C6.84082 6.6282 6.15918 6.6282 5.76285 6.19583L1 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+							</button>
 				        </li>
 				        <li class="categor__tabs__item">
-				          <button type="button" data-tab="3">Полоса нержавеющая никельсодержащая</button>
-				        </li>
+				          <button class="categor__tabs__button" type="button" data-tab="3"><span>Полоса нержавеющая никельсодержащая</span>
+				          <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="categor__tabs-arrow">
+							<path d="M12 1L7.23716 6.19583C6.84082 6.6282 6.15918 6.6282 5.76285 6.19583L1 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+							</button>
+						</li>							
 				      </ul>
 				    </nav>
 				    <section class="categor__tabs__tab active" data-tab="1">
@@ -745,6 +758,231 @@
 					     </div>
 
 			        </section>
+			        <section class="categor__tabs__tab" data-tab="2">
+				    	<div style="overflow-x: scroll;">
+				    	<table class="categor__table">
+          					<tr class="categor__characteristic__list">
+						        <th>Наименование товара</th>
+						        <th>Марка стали</th>
+						        <th>Размер</th>
+						        <th>Длина</th>
+						        <th>Номер профиля</th>
+						        <th>Ширина</th>
+						        <th>Цена<br>(руб.&nbsp;за&nbsp;тн)</th>
+						        <th>&#8195;&#8195;</th>
+						     </tr>
+						    <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href=""></a></td>
+						     	<td>Ст3</td>
+						     	<td>5</td>
+						     	<td>6000-12000</td>
+						     	<td>5</td>
+						     	<td>50 мм</td>
+						     	<td>45 000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						      <tr class="categor__products__characteristic__list">
+						     	<td><a class="categor-table__link" href="">Швеллер 5 по9г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 5 у сталь 1-5, пс-сп</a></td>
+						     	<td>Сталь 1-3, ПС-СП</td>
+						     	<td>5</td>
+						     	<td>6000</td>
+						     	<td>5</td>
+						     	<td>50</td>
+						     	<td>45&nbsp;000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 5 у 09г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 6.5 п сталь 1-5, пс-сп</a></td>
+						     	<td>Ст3</td>
+						     	<td>6,5</td>
+						     	<td>6000-12000</td>
+						     	<td>6,5</td>
+						     	<td>60</td>
+						     	<td>44&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 6.5 п09г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>6,5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;300</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 8 п сталь 1-5, пс-сп</a></td>
+						     	<td>Сталь 1-3, пс-сп</td>
+						     	<td>6,5</td>
+						     	<td>12000</td>
+						     	<td>6,5</td>
+						     	<td>60</td>
+						     	<td>43&nbsp;000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     						    <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">Швеллер 5 п сталь 1-5, пс-сп, 1-5, 1-5, 1-745 ППЦ названия</a></td>
+						     	<td>Ст3</td>
+						     	<td>5</td>
+						     	<td>6000-12000</td>
+						     	<td>5</td>
+						     	<td>50 мм</td>
+						     	<td>45 000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						      <tr class="categor__products__characteristic__list">
+						     	<td><a class="categor-table__link" href="">Швеллер 5 по9г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 5 у сталь 1-5, пс-сп</a></td>
+						     	<td>Сталь 1-3, ПС-СП</td>
+						     	<td>5</td>
+						     	<td>6000</td>
+						     	<td>5</td>
+						     	<td>50</td>
+						     	<td>45&nbsp;000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 5 у 09г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 6.5 п сталь 1-5, пс-сп</a></td>
+						     	<td>Ст3</td>
+						     	<td>6,5</td>
+						     	<td>6000-12000</td>
+						     	<td>6,5</td>
+						     	<td>60</td>
+						     	<td>44&nbsp;500</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 6.5 п09г2с 09г2с</a></td>
+						     	<td>09Г2С</td>
+						     	<td>6,5</td>
+						     	<td></td>
+						     	<td></td>
+						     	<td></td>
+						     	<td>50&nbsp;300</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>
+						     <tr class="categor__characteristic__list">
+						     	<td><a class="categor-table__link" href="">швеллер 8 п сталь 1-5, пс-сп</a></td>
+						     	<td>Сталь 1-3, пс-сп</td>
+						     	<td>6,5</td>
+						     	<td>12000</td>
+						     	<td>6,5</td>
+						     	<td>60</td>
+						     	<td>43&nbsp;000</td>						     	
+						     	<td>
+						     		<div class="table-card__img">
+						     			<button type="button" class="categor_table_cart"></button>
+						     		</div>
+						     	</td>
+						     </tr>										    
+					     </table>
+					 </div>
+
+					     <div class="categor-pagination d-flex">
+					     	<button class="categor-pagination__back" type="button">назад</button>
+					     	<ul class="categor-pagination__list d-flex">
+					     		<li><a href="">1</a></li>
+					     		<li><a href="">2</a></li>
+					     		<li><a href="" class="active">3</a></li>
+					     		<li><a href="">4</a></li>
+					     		<li><a href="">5</a></li>
+					     	</ul>
+					     	<button class="categor-pagination__next" type="button">вперёд</button>
+					     </div>
+
+			        </section>
 				</div>
 			</div>
 		</div>
@@ -753,25 +991,34 @@
 					<h2 class="categor-text__title">Технические преимущества</h2>
 					<div class="categor-text__wrap">
 						<p>Купить полосу стали с защитным покрытием или оцинкованную можно для разнообразных целей. Из этого материала можно изготавливать любые изделия, которые требуют устойчивой защиты от воды. Листы проката имеют такие преимущества:</p>
-						<ul class="categor-text__list">
-							<li>многофункциональность</li>
-							<li>любая форма</li>
-							<li>длительный срок службы</li>
-							<li>отличная защита от коррозии</li>
-							<li>универсальность</li>
-						</ul>
-						<p>Цена стальная полосы невелика, поэтому ее используют для изготовления самых простых изделий. Например, из такого материала можно делать баки для воды или мангалы, которые потом реализовывать в 5-10 раз дороже, чем себестоимость листа.</p>
+						<button class="btn-more">Читать далее</button>
+						<div class="seo_text_more">
+							<ul class="categor-text__list">
+								<li>многофункциональность</li>
+								<li>любая форма</li>
+								<li>длительный срок службы</li>
+								<li>отличная защита от коррозии</li>
+								<li>универсальность</li>
+							</ul>
+							<p>Цена стальная полосы невелика, поэтому ее используют для изготовления самых простых изделий. Например, из такого материала можно делать баки для воды или мангалы, которые потом реализовывать в 5-10 раз дороже, чем себестоимость листа.</p>
+						</div>
 					</div>
 					<h2 class="categor-text__title">Технология производства</h2>
 					<div class="categor-text__wrap">
 						<p>Прокатная сталь должна иметь повышенную прочность, поэтому сплав Ст3, из которого ее изготавливают, дополнительно насыщают углеродом. Горячекатаное производство происходит на основе мартеновского и конвертерного способа. То есть вначале сталь доводят до нужных норм по составу, а после раскатывают на специальных станах по нужным заказчику размерам. Основной диапазон температур для использования стальной полосы с маркой стали Ст3 от -40 до +425 оС.</p>
+						<button class="btn-more">Читать далее</button>
+						<div class="seo_text_more">
 						<p>Во время производства, итоговый продукт проверяется на всех этапах обработки. На финальном этапе проводится дополнительная проверка для выявления случайных дефектов. Каждый рулон или блок стали, который поставляется для реализации, имеет все сертификаты и документацию, подтверждающие соответствие прокатного листа ГОСТам. Чтобы получить копии документов, отправьте запрос менеджеру на официальную почту, позвоните по номерам, указанным на сайте, или посетите офис компании «МеталлМос Комплект».</p>
+						</div>
 					</div>
 					<h2 class="categor-text__title">Купить полосу стальную от «МеталлМос Комплект»</h2>
 					<div class="categor-text__wrap">
 						<p>Компания «Название» дает возможность купить полосу стальную по максимально разумным ценам, благодаря оптовым закупкам и непосредственному сотрудничеству с заводом-производителем продукции.</p>
-						<p> Доставка осуществляется во все регионы страны, а также по Москве и области. Обратите внимание, что цена за метр на стальную полосу может отличаться из-за сложностей доставки в ваш регион и значительной удаленности от наших складов. Детали по вопросам окончательной стоимости товара уточняйте у консультанта по указанным на сайте контактам.</p>
-						<p>Для отправки доступны самые разнообразные унифицированные размеры стали. Если вам нужны особые размеры обратитесь к менеджеру, наш сотрудник поможет решить вашу проблему, а также проконсультирует по любым другим вопросам.</p>
+						<button class="btn-more">Читать далее</button>
+							<div class="seo_text_more">
+							<p> Доставка осуществляется во все регионы страны, а также по Москве и области. Обратите внимание, что цена за метр на стальную полосу может отличаться из-за сложностей доставки в ваш регион и значительной удаленности от наших складов. Детали по вопросам окончательной стоимости товара уточняйте у консультанта по указанным на сайте контактам.</p>
+							<p>Для отправки доступны самые разнообразные унифицированные размеры стали. Если вам нужны особые размеры обратитесь к менеджеру, наш сотрудник поможет решить вашу проблему, а также проконсультирует по любым другим вопросам.</p>
+						</div>
 					</div>
 				</div>
 		    </div>
@@ -982,6 +1229,21 @@
  				  <button class="popup-index__btn" type="submit">Отправить</button>
       		</form>
 	</div>
+
+	<div id="popup-category" style="display: none; max-width: 500px;">
+		<p class="popup-category__ttl">Отправьте номенклатуру файлом</p>
+		<p class="popup-category__text">Заполните форму или прикрепите файл с перечнем интересующих вас товаров, наши менеджеры сделаю расчёт</p>
+		<form>
+			<input class="popup-form__input" type="text" name="name" placeholder="Имя"required>
+			<input class="popup-form__input" type="text" name="e-mail" placeholder="Почта">
+	        <input class="popup-form__input" type="tel" name="phone" placeholder="Телефон" required>
+	        <textarea class="popup-form__textarea" name="text" placeholder="Сообщение"></textarea>
+	        <input type="file" name="" value="Прикрепить файл" placeholder="Прикрепить файл">
+	        <p class="popup-form__subtext">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
+	        <button class="popup-index__btn" type="submit">Отправить</button>
+		</form>
+	</div>
+
 
 	<script src="jquery/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>

@@ -267,6 +267,26 @@
     max-width: 211px;
   }
 
+  .categor-banner_img1 {
+    display: none;
+  }
+
+  .categor-banner_img2 {
+    display: block;
+  }
+
+  .categor-banner {
+    justify-content: center;
+  }
+
+  .categor__item {
+    max-width: 49%;
+  }
+
+  .categor__list {
+    justify-content: center;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -522,6 +542,90 @@
     background-size: 80%;
    }
 
+   .categor-form__ttl {
+    font-size: 20px;
+    line-height: 24px;
+   }
+
+   .categor-form__text {
+    font-size: 14px;
+    line-height: 17px;
+   }
+
+   .categor-form__wrap {
+    padding: 50px 20px;
+   }
+
+   .categor-form__input {
+    border-radius: 45px;
+   }
+
+   .categor-form__input {
+    margin: 3px 0;
+    width: 100%;
+    max-width: 100%;
+   }
+
+   .categor-form__textarea {
+    width: 100%;
+   }
+
+   .categor-banner_img2 {
+    display: none;
+  }
+
+  .categor-banner_img1 {
+    display: block;
+  }
+  .categor-banner__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .categor-text__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .categor__tabs__list {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .categor__tabs__item {
+    width: 100%;
+    display: none;
+    text-align: left;
+  }
+  .active-top {
+    display: block;
+  }
+  .categor__tabs__item .active {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .categor__tabs__item.active {
+    display: flex;
+  }
+
+  .categor__tabs__button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categor__tabs-arrow {
+    display: block;
+    transform: scale(0.7);
+    width: auto;
+  }
+  .categor__tabs-arrow.active {
+    width: auto;
+  }
+
+
 }
 @media screen and (max-width: 425px) {
   .abvant-item {
@@ -560,6 +664,10 @@
     background-size: 80%;
    }
 
+   .categor__item img {
+    max-width: 130px;
+  }
+
   }
 @media screen and (max-width: 320px) {
  .header_top_text::after {
@@ -569,6 +677,10 @@
 
  .catalog-card__title {
     max-width: 50%;
+  }
+
+  .categor-pagination__list {
+    font-size: 14px;
   }
 
 }
