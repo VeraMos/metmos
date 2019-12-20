@@ -297,14 +297,57 @@
     background-color: #fff;    
     padding: 15px;
     margin: 0;
+    box-shadow: 0px 15px 31px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-weight: bold;
   }
 
-    .leftmenu__list {
-    margin: 0px 0 30px;
+  .leftmenu-mobile__top:hover {
+    color: #FBB91B;
+  }
+
+  .leftmenu-mobile__top::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background-image: url(../img/index/burger.png);
+    width: 22px;
+    height: 18px;
+  }
+
+  .leftmenu__list {
+    margin: -15px 0 30px;
     border-radius: 0 0 10px 10px;
     display: none;
   }
 
+  .leftmenu-mobile__top.active {
+    color: #FBB91B;
+  }
+
+  .leftmenu__item::after {
+    transform: scale(0.7);
+  }
+
+  .leftmenu__list_level2 {
+    position: relative;
+    left: 0;
+    min-width: auto;
+  }
+
+  .leftmenu__list_level2 li {
+    width: 100%;
+  }
+
+  .leftmenu__list_level2 li {
+    padding: 10px 12px;
+    line-height: 20px;
+  }
+
+  .leftmenu__list_level2.no-active {
+    display: none!important;
+  }
 
 }
 

@@ -41,7 +41,14 @@ $('.leftmenu__filter__ttl').click(function() {
 
 $('.leftmenu-mobile__top').click(function() {
   $('.leftmenu__list').slideToggle();
-  //$(this).next('.categor__filter__list').toggleClass('active');
+  $(this).toggleClass('active');
+  //$(this).children('.leftmenu-arrow').toggleClass('active');
+});
+
+$('.leftmenu__item').click(function() {
+  event.preventDefault();
+  $(this).next('.leftmenu__list_level2').toggleClass('no-active');
+  //$(this).toggleClass('active');
   //$(this).children('.leftmenu-arrow').toggleClass('active');
 });
 

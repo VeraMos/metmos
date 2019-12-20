@@ -1395,7 +1395,7 @@ button {
   background-color: #fff;
   list-style: none;
   padding: 20px;
-  margin: 65px 0 50px;
+  margin: 65px 0 30px;
 }
 
 .leftmenu__item {
@@ -1408,7 +1408,11 @@ button {
   position: relative;
 }
 
-.leftmenu__item:hover a{
+.leftmenu__item__link:hover {
+  color: #FBB91B;
+}
+
+.leftmenu__item__level2_link:hover{
   color: #FBB91B;
 }
 
@@ -2042,6 +2046,16 @@ button {
 
 .leftmenu-mobile__top {
     display: none;
+}
+
+.leftmenu__list_level3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftmenu__list_level3 li {
+    padding: 5px 12px!important;
 }
 
 
