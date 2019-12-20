@@ -13,6 +13,13 @@ $(function() {
     $(this).toggleClass('active');
      });
 
+  $('button[data-tabs]').click(function(){
+    var target = $(this).attr('data-tabs');
+    $('[data-tabs]').removeClass('active');
+    $('section[data-tabs="'+target+'"]').addClass('active');
+    $(this).toggleClass('active');
+     });
+
 $('.btn-more').click(function(){
 	$(this).next('.seo_text_more').slideToggle();
   $(this).hide();
@@ -47,7 +54,8 @@ $('.leftmenu-mobile__top').click(function() {
 
 $('.leftmenu__item').click(function() {
   event.preventDefault();
-  $(this).next('.leftmenu__list_level2').toggleClass('no-active');
+  $(this).toggleClass("yellow-active");
+  $(this).find('.leftmenu__list_level2').toggleClass('no-active');
   //$(this).toggleClass('active');
   //$(this).children('.leftmenu-arrow').toggleClass('active');
 });
