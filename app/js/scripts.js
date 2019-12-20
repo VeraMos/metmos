@@ -18,6 +18,11 @@ $('.btn-more').click(function(){
   $(this).hide();
 });
 
+$('.categor-partner__button').click(function(){
+  $('.categor-partner__hidden-mobile').slideToggle();
+  $(this).hide();
+});
+
 $('.footer-item-first').click(function() {
   $(this).next('.footer-menu_list').slideToggle();
   $(this).children('.footer-menu-arrow').toggleClass('active');
@@ -34,11 +39,15 @@ $('.leftmenu__filter__ttl').click(function() {
   $(this).children('.leftmenu-arrow').toggleClass('active');
 });
 
+$('.leftmenu-mobile__top').click(function() {
+  $('.leftmenu__list').slideToggle();
+  //$(this).next('.categor__filter__list').toggleClass('active');
+  //$(this).children('.leftmenu-arrow').toggleClass('active');
+});
+
 $('.categor__tabs__button').click(function() {
   $('.categor__tabs__button').parent("li").addClass('active-top');
   $('.categor__tabs__item').toggleClass('active');
-  //$(this).next('.categor__filter__list').toggleClass('active');
-  //$(this).children('.categor__tabs-arrow').toggleClass('active');
 });
 
 $('.header__menu-toggle').on('click', function(e) {
@@ -88,7 +97,8 @@ $("#menu").mmenu({
 $(function() {
 
   $('input, select').styler({
-  fileBrowse: 'Выбрать',
+  fileBrowse: 'Прикрепить файл',
+  filePlaceholder: '&nbsp;',
   singleSelectzIndex: '999',
   onSelectOpened: function() {
     // к открытому селекту добавляется красная обводка
