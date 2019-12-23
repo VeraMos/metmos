@@ -92,6 +92,35 @@
   justify-content: space-between;
 }
 
+.categor-form {
+  overflow: hidden;
+}
+
+.btn__product-item {
+    padding: 7px 20px;
+  }
+
+.product-item__transpoptation {
+  justify-content: center;
+  }
+
+.categor__button__show {
+  margin: 0px auto 5px;
+}
+
+.categor-button__wrap {
+  flex-wrap: wrap;
+}
+
+.product-list_advant {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item_advant {
+    width: 25%;
+  }
+
 }
 @media screen and (max-width: 992px) {
   
@@ -314,6 +343,7 @@
     background-image: url(../img/index/burger.png);
     width: 22px;
     height: 18px;
+    background-repeat: no-repeat;
   }
 
   .leftmenu__list {
@@ -347,6 +377,10 @@
 
   .leftmenu__list_level2.no-active {
     display: none!important;
+  }
+
+  .active.leftmenu-mobile__top::after {
+    background-image: url(../img/index/arr-app-orange.png);
   }
 
 }
@@ -573,7 +607,7 @@
   }
 
   .categor-title {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
   }
 
@@ -716,6 +750,41 @@
     line-height: 24px;
   }
 
+  .product-item__image {
+    width: 100%;
+  }
+
+  .product-item__block {
+    width: 100%;
+  }
+
+  .product-item__wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-item__block {
+    max-width: 470px;
+    margin-left: 0px;
+  }
+
+  .product-item__similar__block {
+    margin: 0 50px;
+  }
+
+  .product-item__transpoptation__block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn__product-item {
+    padding: 7px 10px;
+  }
+
+  .product-item__block {
+    padding: 17px 0 17px 15px;
+  }
+
 }
 @media screen and (max-width: 425px) {
   .abvant-item {
@@ -758,6 +827,11 @@
     max-width: 130px;
   }
 
+  .product-item__similar__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
   }
 @media screen and (max-width: 320px) {
  .header_top_text::after {
@@ -771,6 +845,26 @@
 
   .categor-pagination__list {
     font-size: 14px;
+  }
+
+  .product-item__similar__block {
+    margin: 0 10px;
+  }
+
+  .product-item__table td {
+    padding: 0 7px;
+  }
+
+  .product-item__transpoptation__text {
+    padding: 0 10px;
+  }
+
+  .prev-left__product {
+    right: 10px;
+  }
+
+  .prev-right__product {
+    right: -10px;
   }
 
 }

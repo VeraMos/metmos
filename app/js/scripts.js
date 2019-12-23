@@ -6,6 +6,59 @@ $(function() {
     	dots: true
 });
 
+  $('.product-item__similar__slider').slick({
+    //dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="prev-left__product"></button>',
+    nextArrow: '<button class="prev-right__product"></button>',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+       slidesToShow: 3,
+       slidesToScroll: 1,
+       prevArrow: '<button class="prev-left__product"></button>',
+       nextArrow: '<button class="prev-right__product"></button>'
+     }
+    },
+   {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '<button class="prev-left__product"></button>',
+        nextArrow: '<button class="prev-right__product"></button>'
+        }
+     },
+     {
+      breakpoint: 576,
+      settings: {
+        //dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<button class="prev-left__product"></button>',
+        nextArrow: '<button class="prev-right__product"></button>'
+        }
+     },
+     {
+     breakpoint: 320,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: false,
+        nextArrow: false
+        }
+     }
+  ]
+});
+
   $('button[data-tab]').click(function(){
     var target = $(this).attr('data-tab');
     $('[data-tab]').removeClass('active');
