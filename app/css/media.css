@@ -139,6 +139,10 @@
     width: 40%;
   }
 
+  .about__text {
+    max-width: 100%;
+  }
+
 }
 @media screen and (max-width: 992px) {
   
