@@ -1408,10 +1408,6 @@ button {
   position: relative;
 }
 
-.leftmenu__item__link:hover {
-  color: #FBB91B;
-}
-
 .leftmenu__item__level2_link:hover{
   color: #FBB91B;
 }
@@ -1438,9 +1434,14 @@ button {
     background-repeat: no-repeat;
 }
 
-.leftmenu__item:hover::after {
-   background-image: url(../img/index/ar-down-hover.svg);
+.leftmenu__item::after.yellow-active {
+    background-image: url(../img/index/ar-down-hover.svg);
+    transform: scale(0.7) rotate(180deg);
 }
+
+/*.leftmenu__item:hover::after {
+   background-image: url(../img/index/ar-down-hover.svg);
+}*/
 
 .leftmenu-ttl {
   font-weight: 500;
@@ -1671,7 +1672,7 @@ button {
 .categor-pagination__next::after {
   position: absolute;
   top: 40%;
-  right: : 0;
+  right: 0;
   content: "";
   width: 13px;
   height: 8px;
@@ -2012,15 +2013,14 @@ button {
 .jq-file__browse {
   position: relative;
   border-left: none;
-  border-radius: none;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
   font: inherit;
   font-size: 10px;
   line-height: 12px;
-  padding-left: 16px;
   display: inline-block;
-  padding: 12px 0;
+  padding: 12px 0 12px 16px;
 }
 
 .jq-file::after {
@@ -2080,6 +2080,7 @@ button {
 
 .product-item__image img {
   width: 100%;
+  height: 100%;
 }
 
 .product-item__price p {
@@ -2381,8 +2382,105 @@ button {
 .prev-right__product:hover, 
 .prev-left__product:hover {
   background-color: #F4F4F4;
-
 }
+
+.jq-file:hover .jq-file__browse {
+  background: transparent;
+}
+
+.product-item__payment {
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.product-item__payment__name {
+  text-align: center;
+}
+
+.product-item__description{
+  padding: 30px;
+}
+
+.product-item__specif {
+  padding: 20px 25px;
+}
+
+.product-item__specif td:first-child{
+  color: #808080;
+}
+
+.product-item__specif td {
+  padding: 10px 15px;
+}
+
+.product-item__mobile {
+  display: none;
+}
+
+.categor-title span.yellow {
+  color: #FBB91B;
+}
+
+.about__catalog {
+  background-color: #fff;
+  padding: 80px 0px 30px;
+}
+
+.about__img {
+  height: 200px;
+}
+
+.about__item {
+  position: relative;
+  max-width: 300px;
+}
+
+.about__list {
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__item p{
+  text-align: center;
+  color: #333333;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.about__text {
+  max-width: 60%;
+}
+
+.map__contacts {
+  color: #fff;
+  background-color: #191919;
+  padding: 80px 50px;
+  width: 30%;
+}
+
+.map__contacts a {
+  color: #fff;
+  display: block;
+}
+
+.map__img {
+  width: 71%;
+}
+
+.map {
+  margin: 50px 0;
+}
+
+.about__item__link {
+  width: 25%;
+}
+
 
 
 

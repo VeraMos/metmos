@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 1200px) {
   .search-header__input {
     min-width: auto;
@@ -10,6 +12,14 @@
 .categor-abvant-item::after {
   background: none;
 }
+
+.categor-form {
+  overflow: hidden;
+}
+
+.about__img {
+    height: 165px;
+    }
 
 }
 
@@ -92,10 +102,6 @@
   justify-content: space-between;
 }
 
-.categor-form {
-  overflow: hidden;
-}
-
 .btn__product-item {
     padding: 7px 20px;
   }
@@ -119,6 +125,18 @@
 
 .product-item_advant {
     width: 25%;
+  }
+
+  .product-item__transpoptation__block {
+    width: 100%;
+  }
+
+  .product-item__block  {
+    width: 60%;
+  }
+
+  .product-item__image {
+    width: 40%;
   }
 
 }
@@ -381,6 +399,23 @@
 
   .active.leftmenu-mobile__top::after {
     background-image: url(../img/index/arr-app-orange.png);
+    right: 11px;
+  }
+
+  .product-item__payment {
+    padding: 40px 0;
+  }
+
+  .product-item__payment__img img{
+    width: 90%;
+  }
+
+  .about__item__link {
+    width: 30%;
+  }
+
+  .about__img {
+    height: 160px;
   }
 
 }
@@ -785,6 +820,85 @@
     padding: 17px 0 17px 15px;
   }
 
+  .product-item__payment {
+    flex-wrap: wrap;
+  }
+
+  .product-item__description {
+    padding: 15px 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product-item__specif {
+    padding: 15px 10px;
+  }
+
+   .product-item__payment__name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .product-item__payment__block {
+    width: 50%;
+  }
+
+  .mobile_hide {
+    display: none;
+  }
+
+  .product-item__mobile {
+  display: block;
+  }
+
+  .product-item__mobile-block {
+    display: none;
+    background-color: #fff; 
+  }
+
+  .product-item__button {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0;
+    text-align: center;
+    background: #F2F2F2;
+    margin: 1px 0;
+    position: relative;
+  }
+
+  .product-item__button::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    width: 13px;
+    height: 8px;
+    background-image: url(../img/index/ar-down.svg);
+    transform: scale(0.7);
+    background-repeat: no-repeat;
+  }
+
+  .product-item__button.active {
+    background-color: #fff;
+    color: #FBB91B;
+  }
+
+  .active.product-item__button::after {
+    background-image: url(../img/index/ar-down-hover.svg);
+    transform: scale(0.7) rotate(180deg);
+  }
+
+  .about__item__link {
+    width: 50%;
+  }
+
+  .about__img {
+    height: 130px;
+  }
+
+  .about__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 @media screen and (max-width: 425px) {
   .abvant-item {
@@ -831,6 +945,10 @@
     font-size: 22px;
     line-height: 30px;
   }
+  .about__img {
+    height: 120px;
+}
+
 
   }
 @media screen and (max-width: 320px) {
