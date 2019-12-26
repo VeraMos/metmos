@@ -108,7 +108,7 @@ $(document).ready(function () {
 
     $('.leftmenu__item').click(function () {
         event.preventDefault();
-        $(this).toggleClass("yellow-active");
+        $(this).removeClass("yellow-active");
         $(this).find('.leftmenu__list_level2').toggleClass('no-active');
         //$(this).toggleClass('active');
         //$(this).children('.leftmenu-arrow').toggleClass('active');
