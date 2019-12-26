@@ -187,6 +187,7 @@ button {
 .header_menu__wrap {
   background-color: #fff;
   box-shadow: 0px 15px 31px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .header-menu__list {
@@ -1044,8 +1045,8 @@ button {
 .breadcrumbs-list {
   list-style: none;
   display: flex;
-  margin: 15px 0 20px 0;
-  padding: 0;
+  padding: 15px 0 20px 0;
+  margin: 0;
 }
 
 .breadcrumbs-item {
@@ -1074,7 +1075,7 @@ button {
   content: "";
   position: absolute;
   top: 5px;
-  left: 0;
+  left: -3px;
   width: 13px;
   height: 8px;
   background-image: url(../img/index/ar-down.svg);
@@ -1141,11 +1142,15 @@ button {
 }
 
 .categor-banner {
-  background-color: #FBB91B;
+  background-color: #333333;
   border-radius: 10px;
   padding: 10px 40px;
   display: flex;
   margin-bottom: 35px;
+}
+
+.categor-banner:hover {
+  background-color: rgba(51, 51, 51, 0.8);
 }
 
 .categor-banner img{
@@ -2461,7 +2466,7 @@ button {
   color: #fff;
   background-color: #191919;
   padding: 80px 50px;
-  width: 30%;
+  width: 35%;
 }
 
 .map__contacts a {
@@ -2470,7 +2475,8 @@ button {
 }
 
 .map__img {
-  width: 71%;
+  width: 65%;
+  box-shadow: 0px 15px 31px rgba(0, 0, 0, 0.1);
 }
 
 .map {
@@ -2479,6 +2485,64 @@ button {
 
 .about__item__link {
   width: 25%;
+}
+
+.map__contacts__tel,
+.map__contacts__adr,
+.map__contacts__grafik {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 15px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.map__contacts__tel::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 24px;
+  background-image: url('../img/index/trubka-map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map__contacts__adr::before {
+  content:"";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 23px;
+  height: 17px;
+  background-image: url('../img/index/email-map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map__contacts__grafik::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/index/vremya-map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map__contacts__mode {
+  padding: 0 0 0 30px;
+  margin: 0;
+  line-height: 18px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.main-about {
+  background-color: #fff;
 }
 
 

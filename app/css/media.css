@@ -143,6 +143,16 @@
     max-width: 100%;
   }
 
+  .map__contacts__tel, .map__contacts__adr, .map__contacts__grafik {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .map__contacts__mode {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
 }
 @media screen and (max-width: 992px) {
   
@@ -420,6 +430,15 @@
 
   .about__img {
     height: 160px;
+  }
+
+  .map__contacts {
+    padding: 80px 14px;
+    width: 40%;
+  }
+
+  .map__img {
+    width: 60%;
   }
 
 }
@@ -903,6 +922,34 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  .map_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .map__contacts {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .map__img {
+    width: 100%;
+  }
+
+  .about__catalog {
+    padding: 40px 0px 10px;
+  }
+
+  .about {
+    padding: 25px 0 10px;
+  }
+
+  .breadcrumbs-item::after {
+    top: 9px;
+    left: -3px;
+  }
+
+
 }
 @media screen and (max-width: 425px) {
   .abvant-item {
@@ -987,6 +1034,15 @@
 
   .prev-right__product {
     right: -10px;
+  }
+
+  .about__img {
+    height: 100px;
+  }
+
+  .categor-title {
+    font-size: 19px;
+    line-height: 25px;
   }
 
 }
