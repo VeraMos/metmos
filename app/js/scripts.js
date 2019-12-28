@@ -106,12 +106,17 @@ $(document).ready(function () {
         //$(this).children('.leftmenu-arrow').toggleClass('active');
     });
 
+    $('.contacts__block_button').click(function () {
+        $(this).next('.contacts__block__item__text').toggleClass('active');
+        $(this).toggleClass('active');
+        //$(this).children('.leftmenu-arrow').toggleClass('active');
+    });
+
     $('.leftmenu__item').click(function () {
         event.preventDefault();
-        $(this).removeClass("yellow-active");
-        $(this).find('.leftmenu__list_level2').toggleClass('no-active');
-        //$(this).toggleClass('active');
-        //$(this).children('.leftmenu-arrow').toggleClass('active');
+        //$(this).removeClass("yellow-active");
+        $(this).find('.leftmenu__list_level2').toggleClass('active');
+        $(this).toggleClass('active');
     });
 
     $('.categor__tabs__button').click(function () {

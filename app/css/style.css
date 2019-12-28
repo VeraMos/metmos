@@ -2625,13 +2625,14 @@ button {
   background-image: url(../img/index/ar-down.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  transform: rotate(180deg) scale(0.7); 
+  transform: scale(0.8);
 }
 
 .contacts__block_button {
   justify-content: space-between;
   padding: 20px 10px 15px;
   position: relative;
+  align-items: center;
 }
 
 .contacts__block_button::after {
@@ -2772,6 +2773,25 @@ button {
   color: #fff;
   background-color: rgba(251,185,27, 0.8);
 }
+
+.contacts__block__more {
+  display: none!important;
+}
+
+.contacts__block__item__text.active .contacts__block__more{
+  display: block!important;
+}
+
+.contacts__block_button.active span {
+  color: #fbb91b;
+}
+
+.contacts__block_button.active .contacts__block__arrow {
+  background-image: url(../img/index/ar-down-hover.svg);
+  transform: scale(0.8) rotate(-180deg);
+}
+
+
 
 
 
