@@ -2712,9 +2712,8 @@ button {
 .vacancy-banner__text {
   font-size: 65px;
   line-height: 70px;
-  font-weight: bold;
-  text-transform: uppercase;
   padding: 150px 0 105px 105px;
+  max-width: 60%;
 }
 
 .vacancy-block__ttl {
@@ -2734,7 +2733,6 @@ button {
 
 .vacancy-block__table {
   padding: 10px 0;
-  min-width: 500px;
 }
 
 .vacancy-block__table td:first-child {
@@ -2795,24 +2793,91 @@ button {
 
 .services-block__image {
   background-repeat: no-repeat;
-  max-width: 405px;
-  height: auto;
-  width: 40%;
-  background-position: center;
+  max-width: 320px;
+  height: 121px;
+  width: 100%;
   background-size: contain;
+  background-position: center;
 }
 
 .services-block__text {
-  max-width: 60%;
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px 0 70px;
 }
 
-.main-services {
-  background: #fff;
+.services-block__text img {
+  width: 100%;
+  margin-bottom: 30px;
+  min-height: 137px;
 }
 
-.services-blok {
-  margin: 20px 0;
+.services-block__list {
+  flex-direction: column;  
+  border-radius: 10px;
+  margin-top: 77px;
+  margin-bottom: 20px;
 }
+
+.services-block__item {
+  max-width: 320px;
+  background-color: #fff;
+  height: 200px;
+  padding: 25px 0;
+  text-align: center;
+  border-bottom: 1px solid #F2F2F2;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.services-block__item p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.services-block__item.active {
+  background: #FBB91B;
+  box-shadow: 0px 15px 31px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.services-block__item.active p{
+  color: #fff;
+}
+
+.services-block__text__wrap {
+  display: none;
+}
+
+.services-block__text__wrap.active {
+  display: block;
+}
+
+.services-block__item::first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.services-block__item::last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: transparent;
+}
+
+.services-block__ttl {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin: 10px 0 10px;
+  padding: 0;
+}
+
+.vacancy-banner__mobile {
+  display: none;
+}
+
+
+
+
 
 
 

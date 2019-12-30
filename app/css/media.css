@@ -505,7 +505,7 @@
   }
 
   .vacancy-banner__text {
-    max-width: 200px;
+    max-width: 350px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -535,6 +535,36 @@
   .leftmenu__list-parametr {
     margin: 5px 0 20px;
   }
+
+  .services-block__ttl {
+    font-size: 33px;
+    line-height: 49px;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  .services-block__ttl__mobile {
+    display: none;
+  }
+
+  .services-block__ttl__mobile.active {
+    display: block;
+  }
+
+  .services-block__list {
+    margin-top: 0;
+  }
+
+  .services-block__text {
+    margin: 0 0 40px;
+  }
+
+  .vacancy-banner {
+    background-position-x: 75%;
+  }
+
 
 }
 
@@ -1047,10 +1077,64 @@
   .contacts__block__list {
     width: 100%;
   }
-
-   .vacancy-block__table__wrap {
-    overflow-x: scroll;
+   
+  .services-block__item {
+    max-width: 100%;
   }
+
+  .services-block__ttl {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .services-block__text {
+    margin: 20px 0 20px;
+  }
+
+  .vacancy-block__table td{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .vacancy-block__table td:first-child::before {
+    transform: rotate(90deg);
+    left: 11px;
+    top: 25px;
+  }
+
+  .vacancy-block__table td {
+    padding: 5px 0 10px 0;
+  }
+
+  .vacancy-block__table td:first-child {
+    margin-top: 20px;
+  }
+
+  .vacancy-banner__mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .vacancy-banner {
+    background: #fff;
+    height: auto;
+  }
+
+  .vacancy-banner__text {
+    max-width: 100%;
+    padding: 0px 0 10px 17px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .vacancy-banner img {
+    width: 100%;
+  }
+
+
+
+
 
 }
 @media screen and (max-width: 425px) {
@@ -1104,11 +1188,6 @@
 
    .contacts__img__wrap {
     height: 300px;
-  }
-
-  .vacancy-banner__text {
-    font-size: 40px;
-    line-height: 42px;
   }
 
   .categor__tabs__item button {
