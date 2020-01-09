@@ -467,6 +467,10 @@ button {
   background-image:url(../img/index/slider2.png);
 }
 
+.banner-item_slide3 {
+  background-image:url(../img/index/slide3.png);
+}
+
 .banner-text {
   font-size: 24px;
   line-height: 29px;
@@ -477,7 +481,7 @@ button {
   line-height: 52px;
   color: #fff;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .banner-tel:hover {
@@ -2827,6 +2831,7 @@ button {
   text-align: center;
   border-bottom: 1px solid #F2F2F2;
   border-radius: 10px 10px 10px 10px;
+  color: #333333;
 }
 
 .services-block__item p {
@@ -2873,6 +2878,20 @@ button {
 
 .vacancy-banner__mobile {
   display: none;
+}
+
+.delivery_wrap img{
+  display: block;
+}
+
+.delivery-block__text {
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px 0 70px;
+}
+
+.banner-item__block-slide2 {
+  max-width: 880px;
 }
 
 

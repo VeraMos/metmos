@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Металлмос комплект</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="libs/mmenu/mmenu.css" />
+	<link rel="stylesheet" href="libs/mmenu/mmenu.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -89,6 +89,19 @@
 									</ul>
 								</div>
 								<div class="header-block__mobile">
+									<nav id="my-menu">
+									   <ul>
+									      <li><a href="/">Home</a></li>
+									      <li><a href="/about/">About us</a>
+									         <ul>
+									            <li><a href="/about/history/">History</a></li>
+									            <li><a href="/about/team/">The team</a></li>
+									            <li><a href="/about/address/">Our address</a></li>
+									         </ul>
+									      </li>
+									      <li><a href="/contact/">Contact</a></li>
+									   </ul>
+									</nav>
 									<a href="#" class="header-contacts_email" style="display: block;">info@metmos.com</a>
 									<a href="#popup-index" class="header-contacts_zakzv" data-fancybox style="display: block;">Заказать звонок</a>
 									<a href="tel:+84953689773"  class="header-contacts_tel">8 495 368-97-73</a>
@@ -123,6 +136,15 @@
 					<div class="banner-item banner-item_slide1"></div>
 					</div>
 					<div class="banner-item_wrap">
+						<div class="banner-item__block banner-item__block-slide2">
+							<p class="banner-ttl">Все виды металлопроката со склада в Москве</p>
+							<p class="banner-text">Доставим в день заказа</p>
+							<a href="tel:+84951883688" class="banner-tel banner-tel-slide2">8 495 188-36-88</a>
+							<a class="banner-link" href="#">Подробнее &rsaquo;</a>
+						</div>
+						<div class="banner-item banner-item_slide3"></div>
+					</div>
+					<div class="banner-item_wrap" style="background-color: #E2EBF0;">
 						<div class="banner-item__block">
 							<ul class="banner-list">
 								<li>&nbsp;Обратный выкуп металла</li>
@@ -453,7 +475,6 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="libs/mmenu/mmenu.js"></script>
-	<script src="libs/mmenu/mmenu.polyfills.js"></script>
 
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
