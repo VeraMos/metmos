@@ -385,7 +385,7 @@
     position: absolute;
     top: 18px;
     right: 20px;
-    background-image: url(../img/index/burger.png);
+    background-image: url("../img/index/burger.png");
     width: 22px;
     height: 18px;
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@
   }
 
   .active.leftmenu-mobile__top::after {
-    background-image: url(../img/index/arr-app-orange.png);
+    background-image: url("../img/index/arr-app-orange.png");
     right: 11px;
   }
 
@@ -528,7 +528,7 @@
 
   .leftmenu__item.active::after{
     transform: scale(0.7) rotate(-180deg);
-    background-image: url(../img/index/ar-down-hover.svg);
+    background-image: url("../img/index/ar-down-hover.svg");
   }
 
   .leftmenu__item:last-child::before{
@@ -664,11 +664,11 @@
     min-width: auto;
   }
   .banner-item_slide1 {
-    background-image: url(../img/index/slider1-mobile.png)!important;
+    background-image: url("../img/index/slider1-mobile.png")!important;
   }
 
   .banner-item_slide2 {
-    background-image: url(../img/index/slide2-mobile.png)!important;
+    background-image: url("../img/index/slide2-mobile.png")!important;
   }
 
   .banner-ttl {
@@ -1038,7 +1038,7 @@
     right: 13px;
     width: 13px;
     height: 8px;
-    background-image: url(../img/index/ar-down.svg);
+    background-image: url("../img/index/ar-down.svg");
     transform: scale(0.7);
     background-repeat: no-repeat;
   }
@@ -1049,7 +1049,7 @@
   }
 
   .active.product-item__button::after {
-    background-image: url(../img/index/ar-down-hover.svg);
+    background-image: url("../img/index/ar-down-hover.svg");
     transform: scale(0.7) rotate(180deg);
   }
 
