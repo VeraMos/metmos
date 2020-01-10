@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Металлмос комплект</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="libs/mmenu/mmenu.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link href="libs/dist/jquery.formstyler.css" rel="stylesheet" />
 	<link href="libs/dist/jquery.formstyler.theme.css" rel="stylesheet" />
@@ -38,7 +39,7 @@
 				<div class="header_menu__wrap">
 					<div class="container">
 						<div class="header_menu">
-							<a href="#menu" class="header__menu-toggle"><span></span></a>
+							<a href="#mmenu" class="header__menu-toggle"><span></span></a>
 							<div class="header__menu-wrapper">
 								<div class="header_menu-block">
 									<ul class="header-menu__list">
@@ -88,12 +89,51 @@
 										<li class="header-menu__item desctop-none"><a href="#">Вакансии</a>
 									</ul>
 								</div>
-								<div class="header-block__mobile">
-									<a href="#" class="header-contacts_email" style="display: block;">info@metmos.com</a>
-									<a href="#popup-index" class="header-contacts_zakzv" data-fancybox style="display: block;">Заказать звонок</a>
-									<a href="#" class="header-contacts_tel">8 495 368-97-73</a>
-									<a href="#"><div class="header-contacts_logo"><img src="img/index/logo.png" alt="Металлмос"></div></a>
-								</div>
+								<nav id="mmenu" class="">
+									   <ul>
+									      <li><a href="/">Металлопрокат</a>
+									      	<ul>
+									      		<li><a href="">Сортовой прокат</a></li>
+													<li><a href="">Трубы</a></li>
+													<li><a href="">Листовой прокат</a></li>
+													<li><a href="">Метизы и метсырье</a>
+														<ul>
+															<li><a href="">Проволока Вр-1</a></li>
+															<li><a href="">Сетка сварная</a></li>
+															<li><a href="">Шестигранник нержавеющий безникелевый жаропрочный</a></li>
+															<li><a href="">Шестигранник нержавеющий никельсодержащий</a></li>
+															<li><a href="">Комплектующие для лестниц</a></li>
+															<li><a href="">Шестигранник горячекатаный конструкционный</a></li>
+														</ul>
+													</li>
+													<li><a href="">Нержавеющая сталь</a></li>
+													<li><a href="">Цветные металлы</a></li>
+													<li><a href="">Металл б/у</a></li>
+													<li><a href="">Детали трубопроводов</a></li>
+									      	</ul>
+									      </li>
+									      <li><a href="">Металлообработка</a></li>
+									      <li><a href="#">Услуги</a>
+											<ul>
+												<li><a href="">Комплектация</a></li>
+												<li><a href="">Упаковка</a></li>
+												<li><a href="">Доставка</a></li>
+											</ul>
+										</li>
+									      <li><a href="">О компании</a></li>
+									      <li><a href="">ГОСТы</a></li>
+									      <li><a href="">Вакансии</a></li>									      
+									   
+									   <li>
+									   	<span>
+									   	<a href="#" class="header-contacts_email mmenu-contacts_email">info@metmos.com</a>
+									    <a href="#popup-index" class="header-contacts_zakzv mmenu-contacts_zakzv" data-fancybox>Заказать звонок</a>
+										<a href="tel:+84953689773"  class="header-contacts_tel mmenu-contacts_tel">8 495 368-97-73</a>
+										<a href="#"><div class="mmenu-contacts_logo"><img src="img/index/logo.png" alt="Металлмос"></div></a>
+									</span>
+									</li>
+										</ul>
+								</nav>
 							</div>
 							<div id="search-header">
 								<form class="search-header__form d-flex" action="">
@@ -1256,6 +1296,7 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="libs/dist/jquery.formstyler.min.js"></script>
+	<script src="libs/mmenu/mmenu.js"></script>
 
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">

@@ -762,6 +762,11 @@
     text-align: left!important;
   }
 
+  .breadcrumbs-item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .breadcrumbs-item a {
     font-size: 12px;
     line-height: 14px;
