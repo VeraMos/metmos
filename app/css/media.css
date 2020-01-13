@@ -576,6 +576,11 @@
     margin-bottom: 25px;
   }
 
+  .breadcrumbs-item {
+    margin: 0px 5px 0px;
+    padding: 3px 0 3px 15px;
+  }
+
 
 }
 
@@ -765,12 +770,13 @@
   .breadcrumbs-item {
     font-size: 12px;
     line-height: 14px;
+    margin: 0px 5px 0px;
+    padding: 3px 0 3px 15px;
   }
 
   .breadcrumbs-item a {
     font-size: 12px;
     line-height: 14px;
-    padding: 5px 0;
   }
 
   .breadcrumbs-list {
@@ -1093,7 +1099,7 @@
   }
 
   .breadcrumbs-item::after {
-    top: 9px;
+    top: 7px;
     left: -3px;
   }
 
