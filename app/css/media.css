@@ -1182,6 +1182,15 @@
     margin-top: 15px!important;
   }
 
+  .tag-page__wrap {
+    max-height: 100px;
+    overflow-x: scroll;
+  }
+
+  .tag-page__btn {
+    width: 100px;
+  }
+
 }
 @media screen and (max-width: 425px) {
   .abvant-item {
