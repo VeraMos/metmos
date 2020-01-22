@@ -3037,6 +3037,31 @@ button {
   margin: 5px 0 25px;
 }
 
+.ttl-error {
+  text-align: center;
+  padding: 90px 0 10px;
+  margin: 0;
+}
+
+.main-error {
+  background-color: #fff;
+}
+
+.text-error {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.wrap-error {
+  margin-bottom: 40px;
+}
+
+.link-error {
+  color: #FBB91B;
+  font-weight: bold;
+}
+
 
 
 
